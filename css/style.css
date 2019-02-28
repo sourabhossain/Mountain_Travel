@@ -87,6 +87,7 @@ a {
     text-decoration: none;
     opacity: 0.75;
     -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
 }
 
@@ -304,6 +305,7 @@ header a {
 .destinations li {
     opacity: 0.8;
     -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
 
@@ -343,7 +345,10 @@ header a {
 
 .testimonials {
     color: #FFFFFF;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/mountain4.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/mountain5.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/mountain5.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/mountain5.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/mountain5.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -389,9 +394,11 @@ header a {
 }
 
 .contact form input[type="email"] {
-    border: none;
     -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
+    border: 1px solid #E6E6E6;
+    border-radius: 2px;
 }
 
 .contact form input[type="email"]:focus {
@@ -437,5 +444,6 @@ footer p {
     font-size: 14px;
     opacity: 0.6;
     -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
 }
